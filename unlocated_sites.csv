@@ -1,27 +1,2 @@
-location,type,city,source_url,note
-Frank Lloyd Wright Blvd at Cactus Rd,red-light + speed photo enforcement (fixed),Scottsdale,https://www.scottsdaleaz.gov/police/police-units/photo-enforcement,geocode failed/rejected
-Frank Lloyd Wright Blvd at Greenway-Hayden Loop,red-light + speed photo enforcement (fixed),Scottsdale,https://www.scottsdaleaz.gov/police/police-units/photo-enforcement,geocode failed/rejected
-Frank Lloyd Wright Blvd at Greenway-Hayden Loop,red-light + speed photo enforcement (fixed),Scottsdale,https://www.scottsdaleaz.gov/police/police-units/photo-enforcement,geocode failed/rejected
-32nd St: Greenway Pkwy to Bell Rd,"speed camera (mobile, corridor; rotates ~6 months)",Phoenix,https://www.phoenix.gov/administration/departments/streets/safety-improvements/road-safety-action-plan/photo-safety.html,geocode failed/rejected
-Thunderbird Rd: I-17 to 19th Ave,"speed camera (mobile, corridor; rotates ~6 months)",Phoenix,https://www.phoenix.gov/administration/departments/streets/safety-improvements/road-safety-action-plan/photo-safety.html,geocode failed/rejected
-51st Ave: Van Buren St to I-10,"speed camera (mobile, corridor; rotates ~6 months)",Phoenix,https://www.phoenix.gov/administration/departments/streets/safety-improvements/road-safety-action-plan/photo-safety.html,geocode failed/rejected
-27th Ave: Colter St to Missouri Ave,"speed camera (mobile, corridor; rotates ~6 months)",Phoenix,https://www.phoenix.gov/administration/departments/streets/safety-improvements/road-safety-action-plan/photo-safety.html,geocode failed/rejected
-Kyrene Rd and Elliot Rd,red-light + speed photo enforcement (fixed),Tempe,https://www.tempe.gov/government/police/photo-enforcement,geocode failed/rejected
-McClintock Dr and Guadalupe Rd,red-light + speed photo enforcement (fixed),Tempe,https://www.tempe.gov/government/police/photo-enforcement,geocode failed/rejected
-McClintock Dr and Warner Rd,red-light + speed photo enforcement (fixed),Tempe,https://www.tempe.gov/government/police/photo-enforcement,geocode failed/rejected
-Mill Ave and Baseline Rd,red-light + speed photo enforcement (fixed),Tempe,https://www.tempe.gov/government/police/photo-enforcement,geocode failed/rejected
-Alma School Rd and Queen Creek Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-Arizona Ave and Ray Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-Arizona Ave and Warner Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-Arizona Ave and Ocotillo Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-Chandler Blvd and Dobson Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-Chandler Blvd and Kyrene Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-McQueen Rd and Queen Creek Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-Ray Rd and Dobson Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-Ray Rd and McClintock Rd,red-light + speed-on-green photo enforcement (fixed),Chandler,https://www.chandleraz.gov/residents/transportation/traffic-engineering/red-light-photo-enforcement,geocode failed/rejected
-E Lincoln Dr & 36th St,speed camera (mobile),Paradise Valley,https://www.paradisevalleyaz.gov/153/Photo-Radar,geocode failed
-E Lincoln Dr & Tatum Blvd,speed camera (mobile),Paradise Valley,https://www.paradisevalleyaz.gov/153/Photo-Radar,geocode failed
-E Lincoln Dr & Mockingbird Ln,speed camera (mobile),Paradise Valley,https://www.paradisevalleyaz.gov/153/Photo-Radar,geocode failed
-N Tatum Blvd & Desert Jewel Dr,speed camera (mobile),Paradise Valley,https://www.paradisevalleyaz.gov/153/Photo-Radar,geocode failed
-N Tatum Blvd & E Foothill Dr,speed camera (mobile),Paradise Valley,https://www.paradisevalleyaz.gov/153/Photo-Radar,geocode failed
-S Tatum Blvd & E McDonald Dr,speed camera (mobile),Paradise Valley,https://www.paradisevalleyaz.gov/153/Photo-Radar,geocode failed
+location,city,source_url,note
+Judd Rd and Gantzel Rd (Queen Creek area),Queen Creek,https://www.reddit.com/r/phoenix/comments/1nvnbde/spotted_a_set_of_these_cameras_at_the_stop_signs/,social report of cameras at stop signs; no shared OSM node found; not pinned

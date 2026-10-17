@@ -7,25 +7,28 @@ Covers about 50 miles around Phoenix (lat 32.73 to 34.17, lon -112.67 to -111.47
 
 Files: index.html (page), cameras.csv, cameras.kml (Google My Maps import), unlocated_sites.csv (published sites with no coordinates).
 
-## Final counts: 1879 pins
-By type: {'flock_alpr': 1612, 'other_alpr': 166, 'speed_camera': 31, 'photo_enforcement': 70}
+## Final counts: 1902 pins
+By type: Flock ALPR 1613, other ALPR 166, speed camera 39, city photo enforcement (speed/red-light) 84. (Mesa data does not separate speed from red-light, so Mesa is all photo enforcement.)
 
 ## Per-source: input vs output
 | Source | Input | Output pins | Notes |
 |---|---|---|---|
-| DeFlock public data (OSM-derived), ALPR | 1751 | 1751 | Flock + other ALPR, 50-mile bbox |
-| OSM Overpass (speed/red-light nodes) | 26 | 26 | 2 Overpass tiles failed; coverage there is incomplete (33.33,-112.37,33.63,-112.07 and 33.93,-112.07,34.17,-111.77) for non-DeFlock OSM nodes |
-| Mesa PhotoSafety official layer | 49 | 49 | merged copy of the same 49 deduped (<=25 m) |
-| Peoria GIS Flock layer | 74 | 26 new + 48 already present | 48 were within 25 m of existing DeFlock Flock pins (dedupe) |
-| Scottsdale city page (geocoded intersections) | 8 of 11 | 8 | 3 not geocoded; low confidence |
-| Tempe city page (geocoded intersections) | 10 of 14 | 10 | 4 not geocoded; mobile units have no listed spots |
-| Chandler city page (geocoded intersections) | 3 of 12 | 3 | 9 not geocoded |
-| Phoenix photo-safety page (corridor start points) | 5 of 9 | 5 | 4 not geocoded; 8 rotating units have no locations |
-| OpenStreetMap speed cameras (county-wide) | 26 | 1 new + 25 already present | 25 deduped within 25 m |
-| Paradise Valley photo radar page | 6 | 0 | geocoding failed; listed in unlocated_sites.csv |
-| merge_ready.csv total | 175 | 53 new + 122 deduped | 0 dropped for bbox, 0 missing |
+| DeFlock public data (OSM-derived), ALPR | 1751 | 1751 | Flock + other ALPR, 50-mile bbox, all kept |
+| OSM Overpass speed/red-light/ALPR nodes | 27 | 27 | Overpass retry finished: all tiles loaded, 0 failed (retry added 1 node) |
+| Mesa PhotoSafety official layer | 49 | 49 | all active records |
+| Peoria GIS Flock layer | 74 | 26 new + 48 deduped | 48 within 25 m of existing DeFlock Flock pins |
+| Scottsdale page (11 sites) | 11 | 8 earlier + 2 newly geocoded; 1 duplicate row | FLW at Greenway-Hayden listed twice on site |
+| Tempe page (14 sites) | 14 | 10 earlier + 4 newly geocoded | 4 mobile units have no listed spots |
+| Chandler page (12 sites) | 12 | 3 earlier + 9 newly geocoded | |
+| Phoenix photo-safety page (9 corridors) | 9 | 5 earlier + 4 newly geocoded | corridor pins are low confidence (one end or midpoint); 8 rotating units have no locations |
+| Paradise Valley photo radar page (6 sites) | 6 | 6 newly geocoded (some deduped vs OSM) | |
+| OSM speed cameras county-wide | 26 | 1 new + 25 deduped | |
+| Reddit sweep (r/mesaaz) | 3 specific | 1 new + 1 deduped vs existing Flock + 1 not geocodable | Judd Rd and Gantzel Rd (r/phoenix) has no shared OSM node; X sweep gave no specific locations |
+| Total pins in page | | 1902 | page JS loads 1902 (browser-verified) |
 
-Dedupe rule: same camera group within about 25 m of an existing pin. Ungeocoded sites (26 rows) are in unlocated_sites.csv. Programs with counts but no posted locations (Phoenix PD ~132, Glendale 58, Gilbert 42, Avondale 15, Queen Creek 47, Buckeye 72, Goodyear 33, MCSO 32 Litchfield Park) are not mapped. City labels on pins are approximate.
+Merged from merge_ready.csv / geocoding / social: dedupe rule is same camera group within 25 m of an existing pin. Newly geocoded intersections come from OpenStreetMap Overpass (nodes shared by both named roads); confidence medium for intersections, low for corridors. Pin position is the intersection, not the exact camera pole. Still not geocoded: none of the 26; Judd/Gantzel (social) not placed.
+
+Programs with counts but no posted locations (Phoenix PD ~132, Glendale 58, Gilbert 42, Avondale 15, Queen Creek 47, Buckeye 72, Goodyear 33, MCSO 32 Litchfield Park) are not mapped. Tempe voted Oct 15, 2026 to ban ALPR use and Chandler's Flock cameras were reported removed (X posts), so mapped Flock pins in those cities may be stale. City labels on pins are approximate.
 
 ## Sources and attribution
 - DeFlock (deflock.org) and OpenStreetMap contributors, ODbL: https://www.openstreetmap.org/copyright
